@@ -1,0 +1,20 @@
+.homeimage {
+    height:100vh;
+    background: url('./images/HomeImage.jpg');
+    background-size:cover;
+    position:relative;
+}
+.title {
+    font-size: 4.5rem;
+}
+.description {
+    font-size: 2rem;
+}
+.text {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(47, 5, 64);
+    position: absolute;
+    top: 40%;
+    color: white;
+}
