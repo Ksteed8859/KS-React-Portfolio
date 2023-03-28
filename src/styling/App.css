@@ -1,10 +1,12 @@
-/* Home.js */
-.homeimage {
-    height:100vh;
-    background: url('./images/HomeImage.jpg');
-    background-size:cover;
-    position:relative;
+
+.Home, .About {
+    background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+/* Home.js */
 .title {
     font-size: 60px;
 }
@@ -14,26 +16,40 @@
 .text {
     padding: 20px;
     text-align: center;
-    /* background-color: rgb(47, 5, 64); */
-    background-color: rgb(85, 85, 119);
+    background-color: #40092b;
     position: absolute;
     top: 40%;
     color: white;
 }
 
 /* About.js */
-.aboutTitle {
+ .aboutTitle {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
     text-align: center;
     color: white;
     font-size: 60px;
-    padding:30px
-    
+    padding:30px  
 }
+
 .textcard {
-    top: 40%;
-    padding: 10%;
-    background-color: rgb(85, 85, 119);
+    background:#40092b;
     color: white;
     line-height: 2;
+    height: 25%;
+    width: 50%;
+    margin: 30px; 
+    padding: 30px;
     font-size: 18px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow:row wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+
+#meimg {
+    border-radius: 20%;
+    margin: 30px;
 }
