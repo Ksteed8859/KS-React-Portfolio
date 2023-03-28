@@ -1,3 +1,4 @@
+/* Home.js */
 .homeimage {
     height:100vh;
     background: url('./images/HomeImage.jpg');
@@ -5,16 +6,34 @@
     position:relative;
 }
 .title {
-    font-size: 4.5rem;
+    font-size: 60px;
 }
 .description {
-    font-size: 2rem;
+    font-size: 40px;
 }
 .text {
     padding: 20px;
     text-align: center;
-    background-color: rgb(47, 5, 64);
+    /* background-color: rgb(47, 5, 64); */
+    background-color: rgb(85, 85, 119);
     position: absolute;
     top: 40%;
     color: white;
+}
+
+/* About.js */
+.aboutTitle {
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding:30px
+    
+}
+.textcard {
+    top: 40%;
+    padding: 10%;
+    background-color: rgb(85, 85, 119);
+    color: white;
+    line-height: 2;
+    font-size: 18px;
 }

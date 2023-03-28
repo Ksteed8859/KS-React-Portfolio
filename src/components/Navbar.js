@@ -9,7 +9,7 @@ function Navbar({currentPage, handlePageChange}) {
                   onClick={() => handlePageChange('Home')}
                   className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
                 >
-                  Home
+                  Katelyn Steed
                 </a>
             </li>
             <li className="nav-item">
