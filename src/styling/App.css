@@ -32,7 +32,30 @@
     padding-top: 10px;
 }
 
+/* Footer */
+Footer {
+    background-color: #40092b;
+}
 
+.footerUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.footerUl li {
+    padding: 20px;
+}
+.footerUl li a {
+    color: #ffffff;
+}
+
+.footerUl li a:hover {
+    color: #3EB489;
+    text-decoration: underline dotted;
+}
 /* About.js */
  .aboutTitle {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
