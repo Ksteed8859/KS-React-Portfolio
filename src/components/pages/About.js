@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../../styling/images/kate.jpg'
+import image from '../../styling/assets/kate.jpg'
 
 export default function About() {
   return (

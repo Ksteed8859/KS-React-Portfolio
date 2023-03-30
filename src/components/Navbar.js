@@ -14,7 +14,7 @@ function Navbar({currentPage, handlePageChange}) {
                   onClick={() => handlePageChange('About')}
                   style={currentPage === 'About' ? navLinkActive : navLink}
                 >
-                  About
+                  About Me
                 </a>
             </li>
             <li>
