@@ -1,28 +1,33 @@
 import React, {useState} from 'react';
 
 export default function Contact() {
+
     return (
-        <div>
-          <h1>Contact Me!</h1>
-          <p> Want to collaborate or get into contact? Send me a message below and I'll get back to you!</p>
+      <div>
+        <div className='contactHead'>
+          <h1 className='contactTitle'>Contact Me!</h1>
+          <p className='contactDesc'> Want to collaborate or get into contact? Send me a message below and I'll get back to you!</p>
+        </div>   
+           <section className="Contact"> 
+            <div className='contactDiv'>
             <form>
+            <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="name" class="form-control" placeholder="John Doe"/>
+              </div>
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="name" class="form-control" id="contactName" aria-describedby="name" placeholder="Enter name"/>
+                <label for="contactEmail">Email address</label>
+                <input type="email" class="form-control" placeholder="name@email.com"/>
               </div>
-    
+
               <div class="form-group">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email"/>
+                <label for="contactMessage">Message</label>
+                <textarea class="form-control"  rows="5" placeholder="I think you're pretty neat!"></textarea>
               </div>
-    
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea className="form-control" rows="5" placeholder='Type your message here!'></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button className='contactBtn' type="button">Submit</button>
             </form>
-    
+            </div>
+        </section>
         </div>
       );
     }

@@ -1,27 +1,61 @@
 
-.Home, .About {
+.About, .Contact {
     background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Home.js */
-.title {
-    font-size: 60px;
-}
-.description {
-    font-size: 40px;
-}
-.text {
-    padding: 20px;
-    text-align: center;
+/* Nav */
+.nav {
     background-color: #40092b;
-    position: absolute;
-    top: 40%;
-    color: white;
+}
+.nav h1 {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
 }
 
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.navlinks li {
+    padding: 10px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+/* Footer */
+Footer {
+    background-color: #40092b;
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.footerUl li {
+    padding: 20px;
+}
+.footerUl li a {
+    color: #ffffff;
+}
+
+.footerUl li a:hover {
+    color: #3EB489;
+    text-decoration: underline dotted;
+}
 /* About.js */
  .aboutTitle {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
@@ -42,14 +76,41 @@
     font-size: 18px;
 }
 
-.flex-container {
-    display: flex;
-    flex-flow:row wrap;
-    align-content: center;
-    justify-content: space-around;
-  }
-
 #meimg {
     border-radius: 20%;
     margin: 30px;
+}
+
+/* Contact.js */
+.contactHead {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    text-align: center;
+    color: white;
+}
+.contactTitle {
+    font-size: 60px;
+    padding:30px 
+}
+.contactDesc {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.contactDiv {
+    background:#40092b;
+    color: white;
+    line-height: 4;
+    height: 30%;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 25%; 
+    padding: 30px;
+    font-size: 20px;
+}
+.contactBtn {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #701385 100%);
+    color: white;
+    margin-left: 40%;
+    margin-top:5%;
+    width: 20%;
 }
