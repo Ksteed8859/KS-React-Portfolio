@@ -29,12 +29,9 @@
 .navlinks li {
     padding: 10px;
     padding-left: 100px;
+    padding-top: 10px;
 }
 
-.a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
 /* About.js */
  .aboutTitle {

@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Navbar({currentPage, handlePageChange}) {
-
+  const navLink = {color: '#FFF'}
+  const navLinkActive = {color: '#3EB489', textDecoration: '#3EB489 underline dotted'}
   
     return (
       <div className='nav'>
@@ -11,7 +12,7 @@ function Navbar({currentPage, handlePageChange}) {
                 <a
                   href="#about"
                   onClick={() => handlePageChange('About')}
-                  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                  style={currentPage === 'About' ? navLinkActive : navLink}
                 >
                   About
                 </a>
@@ -20,7 +21,7 @@ function Navbar({currentPage, handlePageChange}) {
                 <a
                   href="#portfolio"
                   onClick={() => handlePageChange('Portfolio')}
-                  className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                  style={currentPage === 'Portfolio' ? navLinkActive : navLink}
                 >
                   Portfolio
                 </a>
@@ -29,7 +30,7 @@ function Navbar({currentPage, handlePageChange}) {
                 <a
                   href="#contact"
                   onClick={() => handlePageChange('Contact')}
-                  className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                  style={currentPage === 'Contact' ? navLinkActive : navLink}
                 >
                   Contact
                 </a>
@@ -38,7 +39,7 @@ function Navbar({currentPage, handlePageChange}) {
                 <a
                   href="#resume"
                   onClick={() => handlePageChange('Resume')}
-                  className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                  style={currentPage === 'Resume' ? navLinkActive : navLink}
                 >
                   Resume
                 </a>
