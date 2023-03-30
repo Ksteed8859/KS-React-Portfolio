@@ -6,6 +6,36 @@
     flex-wrap: wrap;
 }
 
+/* Nav */
+.nav {
+    background-color: #40092b;
+}
+.nav h1 {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.navlinks li {
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* About.js */
  .aboutTitle {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);

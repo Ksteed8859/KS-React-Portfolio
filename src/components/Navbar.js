@@ -1,18 +1,13 @@
 import React from 'react';
 
 function Navbar({currentPage, handlePageChange}) {
+
+  
     return (
-        <ul className="nav nav-tabs">
-            <li className="nav-item">
-                <a
-                  href="#about"
-                  onClick={() => handlePageChange('About')}
-                  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-                >
-                  Katelyn Steed
-                </a>
-            </li>
-            <li className="nav-item">
+      <div className='nav'>
+        <h1>Kate Steed</h1>
+        <ul className='navlinks'>
+            <li>
                 <a
                   href="#about"
                   onClick={() => handlePageChange('About')}
@@ -49,6 +44,8 @@ function Navbar({currentPage, handlePageChange}) {
                 </a>
             </li>
         </ul>
+      </div>
+
     );
 }
 
