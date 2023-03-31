@@ -1,17 +1,44 @@
 import React from 'react';
 
 export default function Resume() {
+  const downloadFile = () => {
+    const a = document.createElement('a');
+    a.href = '/Steed-Resume.pdf';
+    a.download = '/Steed-Resume.pdf';
+    document.body.appendChild(a);
+    a.click();
+}
   return (
     <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+      <h1 class="resumeTitle">My Resume</h1>
+      <section className='Resume'>
+        
+        <div class="resumeLink">
+      <h1 className='skillTitle'>
+      My Skills
+      </h1>
+      <hr></hr>
+      <ul className='skills'>
+        <li> HTML <img src='https://skillicons.dev/icons?i=html' alt='html'></img> </li>
+        <li> CSS <img src='https://skillicons.dev/icons?i=css' alt='css'></img></li>
+        <li> Javascript <img src='https://skillicons.dev/icons?i=js' alt='javascript'></img></li>
+        <li> Node.js <img src='https://skillicons.dev/icons?i=nodejs' alt='nodejs'></img></li>
+        <li> MySQL <img src='https://skillicons.dev/icons?i=mysql' alt='mysql'></img></li>
+        <li> React <img src='https://skillicons.dev/icons?i=react' alt='react'></img></li>
+        <li> MongoDB <img src='https://skillicons.dev/icons?i=mongodb' alt='mongodb'></img></li>
+        <li> Git <img src='https://skillicons.dev/icons?i=git' alt='git'></img></li>
+        <li> Bootstrap <img src='https://skillicons.dev/icons?i=bootstrap' alt='bootstrap'></img></li>
+      </ul>
+
+      <hr></hr>
+        <button className='btn resumeBtn' onClick={downloadFile} value='download'>
+            Download My Resume
+        </button>
+    </div>
+
+        
+        
+      </section>
     </div>
   );
 }
