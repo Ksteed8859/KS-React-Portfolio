@@ -14,7 +14,7 @@ export default function About() {
 
     <div class="column textcard">
       <p>
-      My name is Kate Steed. I'm 20 years old and live in Sandy, UT.
+      Hi! My name is Katelyn Steed.
       <hr></hr>
       I am currently a student at the University of Utah, and I am enrolled in a bootcamp where I'm learning fullstack development.
       <hr></hr>

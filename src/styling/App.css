@@ -112,7 +112,9 @@ Footer {
     color: white;
     margin-left: 40%;
     margin-top:5%;
-    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
 }
 
 /* Resume.js */
@@ -122,4 +124,41 @@ Footer {
     color: white;
     font-size: 60px;
     padding:30px  
+}
+
+.resumeBtn {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #701385 100%);
+    color: white;
+    margin-left: 40%;
+    margin-top:5%;
+}
+
+.resumeLink {
+    background:#40092b;
+    color: white;
+    line-height: 2;
+    height: 25%;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%; 
+    padding: 30px;
+    font-size: 18px;
+
+}
+
+.skillTitle {
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    margin: 30px;
+    font-weight: bold;
 }
