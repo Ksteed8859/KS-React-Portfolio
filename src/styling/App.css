@@ -167,3 +167,62 @@ Footer {
     margin: 30px;
     font-weight: bold;
 }
+
+/* portfolio.js */
+.portfolioTitle {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding:30px  
+}
+
+.soloTitle, .groupTitle {
+    color: white;
+    background:#40092b;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 10px;
+    
+}
+
+.soloTitle h1, .groupTitle h1 {
+    font-size: 40px;
+}
+
+.soloTitle p, .groupTitle p {
+    font-size: 20px;
+}
+
+.soloProjects, .groupProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: rgb(255, 246, 206);
+    width: 25%;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.box h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.box p {
+    font-style: italic;
+}
