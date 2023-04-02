@@ -56,7 +56,17 @@ export default function Contact() {
     }
   };
 
-
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    if (!nameErr && !emailErr && !messageErr) {
+      alert('Thank you for the message! :)');
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      alert('All fields must be completed before submitting')
+    }
+  };
     return (
       <div>
         <div className='contactHead'>
@@ -88,7 +98,7 @@ export default function Contact() {
                  onChange={handleMessageChange} onBlur={validateMessage} placeholder="I think you're pretty neat!"></textarea>
                  {messageErr && <div className="messageErr"> **{messageErr}**</div>}
               </div>
-              <button className='contactBtn' type="button">Submit</button>
+              <button className='contactBtn' type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
             </div>
         </section>
