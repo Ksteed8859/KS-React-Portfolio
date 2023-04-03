@@ -1,11 +1,61 @@
 
-.About, .Contact {
+.About, .Contact, .Portfolio, .Resume {
     background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Nav */
+.nav {
+    background-color: #40092b;
+}
+.nav h1 {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+.navlinks li {
+    padding: 10px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+
+/* Footer */
+Footer {
+    background-color: #40092b;
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.footerUl li {
+    padding: 20px;
+}
+.footerUl li a {
+    color: #ffffff;
+}
+
+.footerUl li a:hover {
+    color: #3EB489;
+    text-decoration: underline dotted;
+}
 /* About.js */
  .aboutTitle {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
@@ -62,5 +112,117 @@
     color: white;
     margin-left: 40%;
     margin-top:5%;
-    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.emailErr, .nameErr, .messageErr {
+    color: red;
+    font-style: italic;
+}
+
+/* Resume.js */
+.resumeTitle {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding:30px  
+}
+
+.resumeBtn {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #701385 100%);
+    color: white;
+    margin-left: 40%;
+    margin-top:5%;
+}
+
+.resumeLink {
+    background:#40092b;
+    color: white;
+    line-height: 2;
+    height: 25%;
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%; 
+    padding: 30px;
+    font-size: 18px;
+
+}
+
+.skillTitle {
+    text-align: center;
+    font-size: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills li {
+    margin: 30px;
+    font-weight: bold;
+}
+
+/* portfolio.js */
+.portfolioTitle {
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    padding:30px  
+}
+
+.soloTitle, .groupTitle {
+    color: white;
+    background:#40092b;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    margin-top: 3%;
+    padding-top: 10px;
+    
+}
+
+.soloTitle h1, .groupTitle h1 {
+    font-size: 40px;
+}
+
+.soloTitle p, .groupTitle p {
+    font-size: 20px;
+}
+
+.soloProjects, .groupProjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    background-color: rgb(255, 246, 206);
+    width: 25%;
+    height: fit-content;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.box h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.box p {
+    font-style: italic;
 }
