@@ -6,7 +6,7 @@ This is my portfolio which uses react to quickly display the different tabs on m
 
 ## Deployed Application
 
-https://ksteed8859.github.io/ks-react-portfolio
+https://astounding-lokum-5c5a22.netlify.app/
 
 ## Image
 
