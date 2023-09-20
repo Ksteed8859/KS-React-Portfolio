@@ -82,6 +82,10 @@ Footer {
 }
 
 /* Contact.js */
+
+.contactBox {
+    color: #3EB489;
+}
 .contactHead {
     background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
     text-align: center;

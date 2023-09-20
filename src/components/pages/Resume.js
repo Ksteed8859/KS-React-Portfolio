@@ -3,8 +3,8 @@ import React from 'react';
 export default function Resume() {
   const downloadFile = () => {
     const a = document.createElement('a');
-    a.href = '/Steed-Resume.pdf';
-    a.download = '/Steed-Resume.pdf';
+    a.href = '/KSteed-resume-2023.pdf';
+    a.download = '/KSteed-resume-2023.pdf';
     document.body.appendChild(a);
     a.click();
 }

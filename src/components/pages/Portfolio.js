@@ -6,6 +6,7 @@ import employeeTracker from '../../styling/assets/employee-tracker.png'
 import weatherDashboard from '../../styling/assets/weather-dashboard.png'
 import marvel from '../../styling/assets/Marvel.png'
 import tParty from '../../styling/assets/tparty.png'
+import ollisanders from '../../styling/assets/ollisanders.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -25,7 +26,7 @@ export default function Portfolio() {
 
         <div className='soloTitle'>
           <h1>Solo Projects</h1>
-          <p>These are some projects that I completed on my own using skills I learned in my computer coding bootcamp</p>
+          <p>These are some projects that I completed on my own using skills I learned in my University of Utah fullstack coding bootcamp</p>
         </div>
         <div className='soloProjects'>
 
@@ -63,6 +64,13 @@ export default function Portfolio() {
           <p>These are some projects I worked on as part of a group, using teamwork and delegation to make a unique app</p>
         </div>
         <div className='groupProjects'>
+
+        <div className="box">
+            <img src={ollisanders} alt="ollisanders" style={style}/>
+                <h1>Ollisander's Wand Store</h1>
+                <p>React.js, Node.js, Express.js, MongoDB, Stripe</p>
+                <p><a href='https://github.com/Ksteed8859/wizard-wands'><FontAwesomeIcon icon={faGithub} /></a> <a href='https://wizard-wands-production.up.railway.app/'><FontAwesomeIcon icon={faComputer} /></a></p>
+          </div>
 
           <div className="box">
             <img src={marvel} alt="marvelSearch" style={style}/>

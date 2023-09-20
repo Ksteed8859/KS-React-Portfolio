@@ -16,7 +16,7 @@ export default function About() {
       <p>
       Hi! My name is Katelyn Steed.
       <hr></hr>
-      I am currently a student at the University of Utah, and I am enrolled in a bootcamp where I'm learning fullstack development.
+      I am a recent graduate of the University of Utah's fullstack web development bootcamp, graduated April of 2023
       <hr></hr>
       I love to learn new skills, and I love pooling my ideas with other people to further refine and develop the skills that I've learned throughout my coding career.
       <hr></hr>
